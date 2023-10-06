@@ -1,0 +1,69 @@
+// Ejercicio3-----------------------
+
+function saludar() {
+    var saludo = "Hola";
+    alert(saludo);
+  }
+  
+  saludar();
+  
+  //Si intentamos mostrar el valor de la variable saludo desde fuera de la función se mostrará un error.
+  window.alert(saludo);
+  //La variable saludo está declarada como variable local dentro de la función saludar()
+  //entoces solo es visible dentro de la función, y no se puede acceder a ella desde fuera de la función.
+
+
+//--------------------------------------------------------------------------------------------------
+var despedida = "Adiós";
+
+function despedir() {
+  alert(despedida);
+}
+
+despedir();
+
+window.alert(despedida);
+/*La variable despedida está declarada como variable global fuera de la función despedir().
+ Esto significa que es visible desde cualquier parte del código, y se puede acceder a ella desde dentro o fuera de las funciones.
+ también podemos mostrar el valor de la variable despedida desde fuera de la función simplemente escribiendo su nombre. (a diferencia del anterior)
+ */
+
+ //---------------------------------------------------------------------------------------------------
+ var saludo = "Hola";
+
+function ámbito() {
+  var saludo = "Adiós";
+  alert(saludo);
+}
+
+alert(saludo);
+
+ámbito();
+
+
+/*En este caso, declaramos dos variables con el mismo nombre, pero con distinto valor.
+ Una variable saludo está declarada como variable global fuera de la función ámbito(), y la otra está declarada como variable local dentro de la función ámbito().
+Cuando invocamos la función ámbito(), se muestra una ventana emergente con el valor de la variable saludo local. */
+
+
+//----------------------------------------------------------------------------------------------------
+var saludo = "Hola";
+
+function ámbito() {
+  saludo = "Adiós";
+  alert(saludo);
+}
+
+alert(saludo);
+
+ámbito();
+
+/*Dentro de la función ámbito(), redefinimos la variable saludo con el valor "Adiós".
+Cuando invocamos la función ámbito(), se muestra una ventana emergente con el valor de la variable saludo redefinida.
+También podemos mostrar el valor de la variable saludo global desde fuera de la función escribiendo su nombre. */
+
+//--------------------------------------------------------------------------------------------------
+
+/*Las variables automáticamente globales son variables que se declaran fuera de cualquier función.
+Estas variables son visibles desde cualquier parte del código, y se pueden acceder a ellas desde dentro o fuera de las funciones.
+Un ejemplo de variable automáticamente global sería window, que representa el objeto global del navegador, */
