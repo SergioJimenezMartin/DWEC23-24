@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        let nombre = prompt("¿Cuál es tu nombre?");
+console.log("Hola, " + nombre + "!");
+console.log(`Hola, ${nombre}!`);
+console.log(typeof nombre);
+console.log(nombre.length);
+let esAlumno = prompt("¿Eres alumno de nuestra clase?");
+alert("¿Eres alumno de nuestra clase? " + (esAlumno === "sí" ? "Sí, eres alumno de nuestra clase." : "No, no eres alumno de nuestra clase."));
+
+
+
+
+
+
+
+function tablaMultiplicar(tabla, fin = 10){
+    for (i=0; i <=fin; i++)
+    console.log(tabla,"x",i,"=",tabla*i);
+}
+tablaMultiplicar(2); //tabla del 2 hasta el 10
+tablaMultiplicar(6, 20); //Tabla de 6 hasta el 20
+</script>
+    </body>
+</html>
