@@ -5,11 +5,18 @@
 <body>
     <script>
 const socios = [];
+let cuentasocios = 0;
 for (let i = 0; i < 10; i++) {
   const nombre = prompt(`Introduzca el nombre del socio número ${i + 1}: `);
   socios.push(nombre);
+  cuentasocios++;
 }
 console.log(`Los nombres de los socios son:${socios.join(", ")}`);
+socios.sort();
+console.log(`Los nombres de los socios ordenados son:${socios.join(", ")}`);
+socios.reverse();
+console.log(`Los nombres de los socios ordenados alreves son:${socios.join(", ")}`);
+console.log(`Hay ${cuentasocios} socios`);
     </script>
     
 </body>
